@@ -32,21 +32,21 @@ const showsC = ['Simpsons', 'Star Trek', 'Simpsons'];
 const showsD = ['House', 'NCIS'];
 
 durationOfEpisodes(showsA);  // 90
-durationOfEpisodes(showsB);  // 195
+durationOfEpisodes(showsB);  // 255
 durationOfEpisodes(showsC);  // 105
 durationOfEpisodes(showsD);  // 75
 
-mostExpensiveGroceries([showsA, showsB, showsC, showsD]);
+shortestRunningPlaylist([showsA, showsB, showsC, showsD]);
 
 let score = 0;
 
 if (durationOfEpisodes(showsA) === 90) score++;
-if (durationOfEpisodes(showsB) === 195) score++;
+if (durationOfEpisodes(showsB) === 255) score++;
 if (durationOfEpisodes(showsC) === 105) score++;
 if (durationOfEpisodes(showsD) === 75) score++;
 
-if (shortestRunningPlaylist([showsA, showsB, showsC, showsD]) === 1) score++;
-if (shortestRunningPlaylist([showsA, showsD]) === 0) score++;
-if (shortestRunningPlaylist([showsA, showsD, showsC]) === 2) score++;
+if (shortestRunningPlaylist([showsA, showsB, showsC, showsD]) === 3) score++;
+if (shortestRunningPlaylist([showsA, showsD]) === 1) score++;
+if (shortestRunningPlaylist([showsA, showsD, showsC]) === 1) score++;
 
 console.log("You have scored " + score + "/7 points.");
